@@ -6,5 +6,85 @@
         <script type="module" src="/src/main.js" defer></script>
         <title>Super Avanti Cool E-Commerce</title>
     </head>
-    <body></body>
+    <body>
+        <section>
+            <p class="text-center text-light py-2 fw-bold bg-primary" style="font-size: 14px">
+                Ganhe
+                <span class="px-1 rounded" style="background-color: #6220c1">R$10,00</span>
+                de desconto no seu primeiro pedido.
+                <br class="d-md-none" />
+                Utilize o cupom
+                <i class="fw-normal">DESCONTO10</i>
+            </p>
+        </section>
+        <div class="container">
+            <header>
+                <!-- mobile top bar -->
+                <div class="d-lg-none d-flex flex-between-props">
+                    <button class="btn border-0">
+                        <i class="bi bi-list fs-1"></i>
+                    </button>
+
+                    <div>
+                        <img src="/images/logos/avanti.svg" width="153" height="28" alt="Avanti Logo" />
+                    </div>
+
+                    <button class="position-relative btn border-0">
+                        <i class="bi bi-cart fs-1"></i>
+                        <span
+                            style="font-size: 12px"
+                            class="fw-bold position-absolute mt-2 px-2 py-1 align-self-center top-0 bottom-50 mx-3 start-50 translate-middle-x badge rounded-pill bg-primary"
+                        >
+                            2
+                        </span>
+                    </button>
+                </div>
+
+                <!-- desktop top bar -->
+                <div class="d-none d-lg-flex flex-between-props">
+                    <div>
+                        <img src="/images/logos/avanti.svg" width="153" height="28" alt="Avanti Logo" />
+                    </div>
+
+                    <div class="flex-grow-1 me-5" style="max-width: 600px">
+                        <form class="position-relative d-flex">
+                            <input
+                                class="form-control rounded-pill"
+                                type="search"
+                                id="searchInput"
+                                placeholder="Digite aqui o que você procura"
+                            />
+                            <button type="submit" class="position-absolute btn end-0 me-1" style="top: -3px">
+                                <i class="bi bi-search fs-5"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex gap-2 flex-center-props">
+                            <span><i class="bi bi-person fs-2 text-primary"></i></span>
+                            <div>
+                                <span class="d-block fw-medium" style="font-size: 14px">Olá,</span>
+                                <span class="d-block fw-medium" style="font-size: 14px">Nome cliente!</span>
+                            </div>
+                        </div>
+                        <div class="ms-4">
+                            <button class="position-relative btn border-0">
+                                <i class="bi bi-cart fs-3"></i>
+                                <span
+                                    style="font-size: 12px"
+                                    class="fw-bold position-absolute mt-2 px-2 py-1 align-self-center top-0 bottom-50 mx-3 start-50 translate-middle-x badge rounded-pill bg-primary"
+                                >
+                                    2
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop nav -->
+                <nav></nav>
+            </header>
+        </div>
+    </body>
 </html>
