@@ -1,1 +1,17 @@
 @import 'bootstrap/scss/bootstrap';
+
+.flex-between-props {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.flex-center-props {
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control::placeholder {
+  color: black!important;
+  opacity: 1;
+}
