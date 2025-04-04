@@ -12,8 +12,12 @@
 }
 
 .form-control::placeholder {
-  color: black!important;
+  color: black;
   opacity: 1;
+}
+
+.custom-fs-sm {
+  font-size: 14px;
 }
 
 .custom-shadow::after {
@@ -26,6 +30,14 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transform: translateX(-50%);
   z-index: -1;
+}
+
+button[aria-expanded="true"] i {
+  color:  #0d6efd ;
+}
+
+a:hover {
+  color:  #0d6efd!important; ;
 }
 
 .animated {
