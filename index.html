@@ -18,7 +18,7 @@
             </p>
         </section>
         <div class="container">
-            <header>
+            <header class="position-relative custom-shadow">
                 <!-- mobile top bar -->
                 <div class="d-lg-none d-flex flex-between-props">
                     <button class="btn border-0">
@@ -83,7 +83,58 @@
                 </div>
 
                 <!-- Desktop nav -->
-                <nav></nav>
+                <nav class="navbar d-none d-lg-flex flex-center-props flex-nowrap">
+                    <button class="btn border-0" type="button">
+                        <i class="bi bi-list fs-3"></i>
+                    </button>
+                    <small class="fw-medium text-nowrap" style="font-size: 14px">Todas as Categorias</small>
+                    <div class="ms-5">
+                        <ul
+                            class="navbar-nav d-flex justify-content-center flex-row ms-3"
+                            style="font-size: 14px; gap: 45px"
+                        >
+                            <li class="nav-item">
+                                <a class="nav-link active fw-light" href="#">Departamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-light" href="#">Departamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-light" href="#">Departamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-light" href="#">Departamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-light" href="#">Departamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-light" href="#">Departamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-light" href="#">Departamento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active fw-light" href="#">Departamento</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- mobile search bar -->
+                <div class="d-lg-none d-flex flex-center-props">
+                    <form class="position-relative w-100 mx-1 mb-3">
+                        <input
+                            class="form-control rounded-pill"
+                            type="search"
+                            id="searchInput2"
+                            placeholder="Digite aqui o que você procura"
+                        />
+                        <button type="submit" class="position-absolute btn end-0 me-1" style="top: -3px">
+                            <i class="bi bi-search fs-5"></i>
+                        </button>
+                    </form>
+                </div>
             </header>
         </div>
     </body>
