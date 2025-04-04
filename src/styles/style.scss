@@ -27,3 +27,17 @@
   transform: translateX(-50%);
   z-index: -1;
 }
+
+.animated {
+  animation: down 1s ease-in-out forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
