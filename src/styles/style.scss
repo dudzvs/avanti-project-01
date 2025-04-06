@@ -60,6 +60,34 @@
   min-height: 660px;
 }
 
+@mixin icon-props {
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.instagram-icon {
+  @include icon-props;
+  background-image: url('/images/logos/instagram.svg');
+}
+
+.facebook-icon {
+  @include icon-props;
+  background-image: url('/images/logos/facebook.svg');
+}
+
+.youtube-icon {
+  @include icon-props;
+  background-image: url('/images/logos/youtube.svg');
+}
+
+.tiktok-icon {
+  @include icon-props;
+  background-image: url('/images/logos/tiktok.svg');
+}
+
 main form:last-of-type {
   padding: 1em;
 }
@@ -77,7 +105,13 @@ a:hover {
   transform: translateY(-100%);
 }
 
-@media (min-width: 999px) {
+@media (max-width: 500px) {
+  .container {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 792px) {
 
   .custom-bg-banner-primary {
     background-position: center;
@@ -107,10 +141,16 @@ a:hover {
 
   main form:last-of-type {
     background-color: #DEDEDE;
+    padding: 3em;
+
+    input:not([type="checkbox"]) {
+      height: 3em;
+    }
   }
 
   main form:last-of-type button {
-    max-width: 100px!important;
+    max-width: 130px!important;
+    padding: 14px 24px 14px 24px;
   }
 }
 

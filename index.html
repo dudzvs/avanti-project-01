@@ -6,7 +6,7 @@
         <script type="module" src="/src/main.js" defer></script>
         <title>Super Avanti Cool E-Commerce</title>
     </head>
-    <body>
+    <body class="">
         <section class="animated">
             <p class="text-center text-light py-2 fw-bold bg-primary" style="font-size: 14px">
                 Ganhe
@@ -599,7 +599,7 @@
                             <img class="mt-5" src="/images/banners/mug.png" alt="" width="410" />
                         </div>
                     </div>
-                    <div class="text-start px-4 text-black fs-6">
+                    <div class="text-start px-2 text-black fs-6">
                         <h2 class="fw-medium fs-1 my-4">Lorem Ipsum</h2>
                         <p class="d-lg-none" style="line-height: 140%">
                             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
@@ -1099,17 +1099,19 @@
                 </div>
 
                 <!-- form -->
-                <div class="d-flex flex-column my-5">
+                <div class="d-flex flex-column my-5 w-100">
                     <h4 class="fw-medium fs-6 mb-md-4 text-center">
                         Cadastre-se na nossa
                         <span class="text-primary">newsletter</span>
                     </h4>
 
-                    <form class="d-flex flex-column flex-md-row gap-3 align-items-center">
-                        <div>
+                    <form
+                        class="d-flex flex-column flex-md-row gap-3 justify-content-center align-items-center rounded px-4"
+                    >
+                        <div class="">
                             <input class="form-control" type="text" id="name" placeholder="Digite seu nome" />
                         </div>
-                        <div>
+                        <div class="">
                             <input class="form-control" type="text" id="email" placeholder="Digite seu email" />
                         </div>
                         <div class="form-check">
@@ -1123,7 +1125,126 @@
                     </form>
                 </div>
             </main>
-            <footer></footer>
+            <footer class="d-flex flex-column">
+                <div class="d-flex flex-column flex-md-row">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column align-items-center gap-4">
+                            <img src="/images/logos/avanti.svg" width="157" />
+                            <div class="d-flex align-items-center justify-content-center gap-4">
+                                <span class="instagram-icon"></span>
+                                <span class="facebook-icon"></span>
+                                <span class="youtube-icon"></span>
+                                <span class="tiktok-icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accordion mobile -->
+                    <div class="d-lg-none w-100 mt-5">
+                        <div class="accordion" id="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button
+                                        class="accordion-button collapsed fw-bold"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                    >
+                                        Institucional
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <h5 class="fw-light custom-fs-sm">Sobre Nós</h5>
+                                        <h5 class="fw-light custom-fs-sm">Nossas lojas</h5>
+                                        <h5 class="fw-light custom-fs-sm">Privacidade e Segurança</h5>
+                                        <h5 class="fw-light custom-fs-sm">Termos e Condições</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button collapsed fw-bold"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                    >
+                                        Central de ajuda
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <h5 class="fw-light custom-fs-sm">Fale Conosco</h5>
+                                        <h5 class="fw-light custom-fs-sm">Frete e Entrega</h5>
+                                        <h5 class="fw-light custom-fs-sm">Trocas e Devoluções</h5>
+                                        <h5 class="fw-light custom-fs-sm">Formas de Pagamento</h5>
+                                        <h5 class="fw-light custom-fs-sm">FAQ</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button
+                                        class="accordion-button collapsed fw-bold"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree"
+                                    >
+                                        Atendimento
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                                    <div class="accordion-body fw-light custom-fs-sm">
+                                        <h5 class="custom-fs-sm">
+                                            <strong>Telefone:</strong>
+                                            (00) 1234-5678
+                                        </h5>
+                                        <h5 class="custom-fs-sm">
+                                            <strong>Email:</strong>
+                                            exemplo@exemplo.com.br
+                                        </h5>
+                                        <h5 class="custom-fs-sm"><strong>Horário de atendimento:</strong></h5>
+                                        <span class="custom-fs-sm">Segunda a Sábado: 07h00 às 23h00</span>
+                                        <span class="custom-fs-sm">Domingos e Feriados: 07h00 às 21h00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- replace for accordion desktop -->
+                    <div class="d-none d-lg-flex justify-content-evenly w-100">
+                        <div class="d-flex flex-column custom-fs-sm gap-1">
+                            <h5 class="fw-bold">Institucional</h5>
+                            <span>Sobre Nós</span>
+                            <span>Nossas Lojas</span>
+                            <span>Privacidade e Segurança</span>
+                            <span>Termos e Condições</span>
+                        </div>
+                        <div class="d-flex flex-column custom-fs-sm gap-1">
+                            <h5 class="fw-bold">Central de ajuda</h5>
+                            <span>Fale Conosco</span>
+                            <span>Frete e Entrega</span>
+                            <span>Trocas e Devoluções</span>
+                            <span>Formas de Pagamento</span>
+                            <span>FAQ</span>
+                        </div>
+                        <div class="d-flex flex-column custom-fs-sm gap-1">
+                            <h5 class="fw-bold">Atendimento</h5>
+                            <span class="custom-fs-sm">
+                                <strong>Telefone:</strong>
+                                (00) 1234-5678
+                            </span>
+                            <h5 class="custom-fs-sm">
+                                <strong>Email:</strong>
+                                exemplo@exemplo.com.br
+                            </h5>
+                            <span class="custom-fs-sm"><strong>Horário de atendimento:</strong></span>
+                            <span class="custom-fs-sm">Segunda a Sábado: 07h00 às 23h00</span>
+                            <span class="custom-fs-sm">Domingos e Feriados: 07h00 às 21h00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- payment methods -->
+                <div>asfasf</div>
+            </footer>
         </div>
     </body>
 </html>
