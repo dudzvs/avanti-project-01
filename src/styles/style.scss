@@ -32,6 +32,16 @@
   z-index: -1;
 }
 
+.custom-bg-banner-primary {
+  background-image: url('/images/banners/primary-banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% center;
+  height: 300px;
+  width: 100%;
+  margin-left: -20px;
+}
+
 button[aria-expanded="true"] i {
   color:  #0d6efd ;
 }
@@ -43,6 +53,29 @@ a:hover {
 .animated {
   animation: down 1s ease-in-out forwards;
   transform: translateY(-100%);
+}
+
+@media (min-width: 999px) {
+
+  .custom-bg-banner-primary {
+    background-position: center;
+    width: 50%;
+    margin-left: 0;
+    height: 500px;
+  }
+
+  main div:first-child div:last-child > h3:first-of-type:not(.carousel h3) {
+    font-size: 100px !important;
+  }
+
+  main div:first-child div:last-child p {
+    font-size: 25px!important;
+    letter-spacing: 5px;
+  }
+
+  main div:first-child div:last-child > h3:last-of-type:not(.carousel h3) {
+    font-size: 50px!important;
+  }
 }
 
 @keyframes down {
