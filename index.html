@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script type="module" src="/src/main.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <title>Super Avanti Cool E-Commerce</title>
     </head>
     <body class="">
@@ -156,40 +162,158 @@
 
                 <!-- Desktop nav -->
                 <nav class="navbar d-none d-lg-flex flex-center-props flex-nowrap">
-                    <button class="btn border-0" type="button">
-                        <i class="bi bi-list fs-3"></i>
-                    </button>
-                    <small class="fw-medium text-nowrap custom-fs-sm">Todas as Categorias</small>
-                    <div class="ms-5">
-                        <ul
-                            class="navbar-nav d-flex justify-content-center custom-fs-sm flex-row ms-3"
-                            style="gap: 45px"
+                    <div class="d-flex align-items-center position-relative">
+                        <button
+                            class="btn border-0"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            aria-expanded="false"
+                            data-bs-target="#menuDesktop"
                         >
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Departamento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Departamento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Departamento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Departamento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Departamento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Departamento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Departamento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Departamento</a>
-                            </li>
-                        </ul>
+                            <i class="bi bi-list fs-3"></i>
+                        </button>
+                        <small class="fw-medium text-nowrap custom-fs-sm">Todas as Categorias</small>
+                        <div class="ms-5">
+                            <ul
+                                class="navbar-nav d-flex justify-content-center custom-fs-sm flex-row ms-3"
+                                style="gap: 45px"
+                            >
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Departamento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Departamento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Departamento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Departamento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Departamento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Departamento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Departamento</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Departamento</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="position-absolute collapse bg-white rounded top-100 w-100 z-3 shadow p-3"
+                            id="menuDesktop"
+                        >
+                            <div class="d-flex align-items-baseline">
+                                <div class="p-3 border-end overflow-auto" style="width: 250px">
+                                    <ul class="list-unstyled">
+                                        <li class="d-flex justify-content-between align-items-center p-2 bg-light">
+                                            <a href="#" class="text-decoration-none text-dark">Departamento</a>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center p-2">
+                                            <a href="#" class="text-decoration-none text-dark">Departamento</a>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center p-2">
+                                            <a href="#" class="text-decoration-none text-dark">Departamento</a>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center p-2">
+                                            <a href="#" class="text-decoration-none text-dark">Departamento</a>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center p-2">
+                                            <a href="#" class="text-decoration-none text-dark">Departamento</a>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </li>
+                                        <li class="d-flex justify-content-between align-items-center p-2">
+                                            <a href="#" class="text-decoration-none text-dark">Departamento</a>
+                                            <i class="bi bi-chevron-right"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="p-3 flex-grow-1">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="text-decoration-none text-muted">Categoria</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <!-- mug2 col bg -->
+                                        <div class="col-3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </nav>
 
@@ -250,13 +374,12 @@
                                 aria-label="Slide 2"
                             ></button>
                         </div>
-
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="d-flex justify-content-center gap-3">
                                     <div class="position-relative p-2 rounded border" style="width: 250px">
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -287,7 +410,7 @@
                                     </div>
                                     <div class="position-relative p-2 rounded border" style="width: 250px">
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -321,7 +444,7 @@
                                         style="width: 250px"
                                     >
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -355,7 +478,7 @@
                                         style="width: 250px"
                                     >
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -389,7 +512,7 @@
                                         style="width: 250px"
                                     >
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -424,7 +547,7 @@
                                 <div class="d-flex justify-content-center gap-3">
                                     <div class="position-relative p-2 rounded border" style="width: 250px">
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -455,7 +578,7 @@
                                     </div>
                                     <div class="position-relative p-2 rounded border" style="width: 250px">
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -489,7 +612,7 @@
                                         style="width: 250px"
                                     >
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -523,7 +646,7 @@
                                         style="width: 250px"
                                     >
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -557,7 +680,7 @@
                                         style="width: 250px"
                                     >
                                         <span
-                                            class="position-absolute z-3 px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
+                                            class="position-absolute px-1 text-light start-0 ms-1 bg-primary rounded fw-bold"
                                             style="font-size: 10px"
                                         >
                                             NOVO
@@ -589,6 +712,29 @@
                                 </div>
                             </div>
                         </div>
+
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#productCarousel"
+                            data-bs-slide="prev"
+                        >
+                            <span class="position-absolute" aria-hidden="true" style="margin-right: 12em">
+                                <i class="bi-arrow-left-circle-fill fs-2 text-primary"></i>
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#productCarousel"
+                            data-bs-slide="next"
+                        >
+                            <span class="position-absolute" aria-hidden="true" style="margin-left: 12em">
+                                <i class="bi bi-arrow-right-circle-fill text-primary fs-2"></i>
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
 
@@ -599,7 +745,7 @@
                             <img class="mt-5" src="/images/banners/mug.png" alt="" width="410" />
                         </div>
                     </div>
-                    <div class="text-start px-2 text-black fs-6">
+                    <div class="text-start px-4 text-black fs-6">
                         <h2 class="fw-medium fs-1 my-4">Lorem Ipsum</h2>
                         <p class="d-lg-none" style="line-height: 140%">
                             Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
@@ -739,7 +885,6 @@
                                 aria-label="Slide 2"
                             ></button>
                         </div>
-
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="d-flex justify-content-center gap-3">
@@ -1078,6 +1223,28 @@
                                 </div>
                             </div>
                         </div>
+                        <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#productCarousel2"
+                            data-bs-slide="prev"
+                        >
+                            <span class="position-absolute" aria-hidden="true" style="margin-right: 12em">
+                                <i class="bi-arrow-left-circle-fill fs-2 text-primary"></i>
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#productCarousel2"
+                            data-bs-slide="next"
+                        >
+                            <span class="position-absolute" aria-hidden="true" style="margin-left: 12em">
+                                <i class="bi bi-arrow-right-circle-fill text-primary fs-2"></i>
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
                 <!-- secondary banner -->
@@ -1243,7 +1410,45 @@
                 </div>
 
                 <!-- payment methods -->
-                <div>asfasf</div>
+                <div class="d-flex flex-column flex-md-row align-items-center gap-4 justify-content-center mb-5">
+                    <div class="d-flex justify-content-center gap-4 gap-md-5 mt-5">
+                        <div class="amex-icon"></div>
+                        <div class="master-card-icon"></div>
+                        <div class="visa-icon"></div>
+                        <div class="hipercard-icon"></div>
+                        <div class="elo-icon"></div>
+                    </div>
+                    <div class="d-flex justify-content-center gap-4 gap-md-5 mt-3 mt-md-5">
+                        <div class="b"></div>
+                        <div class="paypal-icon"></div>
+                        <div class="pix-icon"></div>
+                        <div class="barcode-icon"></div>
+                    </div>
+                </div>
+
+                <div class="mt-5 mb-4">
+                    <p style="font-size: 12px" class="text-center d-none d-lg-block">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                    </p>
+
+                    <p style="font-size: 12px" class="text-center d-lg-none d-block">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci.
+                    </p>
+                </div>
+
+                <div class="d-flex gap-5 justify-content-center">
+                    <div class="encrypt-icon"></div>
+                    <div class="vtex-pci-icon"></div>
+                    <div class="avanti-icon"></div>
+                    <div class="vtex-icon"></div>
+                </div>
             </footer>
         </div>
     </body>

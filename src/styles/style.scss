@@ -1,5 +1,9 @@
 @import 'bootstrap/scss/bootstrap';
 
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
 .flex-between-props {
   justify-content: space-between;
   align-items: center;
@@ -61,12 +65,13 @@
 }
 
 @mixin icon-props {
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 28px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 
 .instagram-icon {
   @include icon-props;
@@ -88,15 +93,87 @@
   background-image: url('/images/logos/tiktok.svg');
 }
 
+.amex-icon {
+  @include icon-props;
+  background-image: url('/images/logos/amex.svg');
+}
+
+.master-card-icon {
+  @include icon-props;
+  background-image: url('/images/logos/mastercard.svg');
+}
+
+.visa-icon {
+  @include icon-props;
+  background-image: url('/images/logos/visa.svg');
+}
+
+.hipercard-icon {
+  @include icon-props;
+  background-image: url('/images/logos/hipercard.svg');
+}
+
+.elo-icon {
+  @include icon-props;
+  background-image: url('/images/logos/elo.svg');
+}
+
+.b {
+  @include icon-props;
+  background-image: url('/images/logos/b.svg')
+}
+
+.paypal-icon {
+  @include icon-props;
+  background-image: url('/images/logos/paypal.svg')
+}
+
+.pix-icon {
+  @include icon-props;
+  background-image: url('/images/logos/pix.svg')
+}
+
+.barcode-icon {
+  @include icon-props;
+  background-image: url('/images/logos/barcode.svg')
+}
+
+.encrypt-icon {
+  @include icon-props;
+  background-image: url('/images/logos/letsEncrypt.svg')
+}
+
+.vtex-pci-icon {
+  @include icon-props;
+  background-image: url('/images/logos/vtex-pci.svg')
+}
+
+.vtex-icon {
+  @include icon-props;
+  background-image: url('/images/logos/vtex.svg')
+}
+
+.avanti-icon {
+  @include icon-props;
+  background-image: url('/images/logos/avanti.svg')
+}
+
 main form:last-of-type {
   padding: 1em;
 }
 
-button[aria-expanded="true"] i {
-  color:  #0d6efd ;
+button[aria-expanded="true"] i,
+button[aria-expanded="true"] + small {
+  color: #0d6efd;
 }
 
-a:hover {
+
+main form:last-of-type button {
+  padding: 14px 24px 14px 24px;
+}
+
+a:hover,
+a:hover + i{
   color:  #0d6efd!important; ;
 }
 
@@ -150,7 +227,6 @@ a:hover {
 
   main form:last-of-type button {
     max-width: 130px!important;
-    padding: 14px 24px 14px 24px;
   }
 }
 
