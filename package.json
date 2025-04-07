@@ -7,9 +7,11 @@
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",
-        "format": "npx prettier --write ."
+        "format": "npx prettier --write .",
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
+        "gh-pages": "^6.3.0",
         "prettier": "3.5.3",
         "sass": "^1.86.2",
         "vite": "^6.2.0"
