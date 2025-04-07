@@ -132,7 +132,13 @@
                                 id="searchInput"
                                 placeholder="Digite aqui o que você procura"
                             />
-                            <button type="submit" class="position-absolute btn end-0 me-1" style="top: -3px">
+                            <button
+                                type="submit"
+                                class="position-absolute btn end-0 me-1"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal"
+                                style="top: -3px"
+                            >
                                 <i class="bi bi-search fs-5"></i>
                             </button>
                         </form>
@@ -326,13 +332,18 @@
                             id="searchInput2"
                             placeholder="Digite aqui o que você procura"
                         />
-                        <button type="submit" class="position-absolute btn end-0 me-1" style="top: -3px">
+                        <button
+                            type="submit"
+                            class="position-absolute btn end-0 me-1"
+                            data-bs-toggle="modal"
+                            data-bs-target="#modal"
+                            style="top: -3px"
+                        >
                             <i class="bi bi-search fs-5"></i>
                         </button>
                     </form>
                 </div>
             </header>
-
             <!-- main content -->
             <main class="mt-2 d-flex flex-column align-items-center">
                 <!-- hero banner -->
@@ -1450,6 +1461,20 @@
                     <div class="vtex-icon"></div>
                 </div>
             </footer>
+
+            <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true" aria-labelledby="modal-label">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modal-label">Voce procurou por:</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="searchedWord" class="text-primary fw-bold fs-2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
