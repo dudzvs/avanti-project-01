@@ -184,8 +184,75 @@
                                 class="navbar-nav d-flex justify-content-center custom-fs-sm flex-row ms-3"
                                 style="gap: 45px"
                             >
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Departamento</a>
+                                <li class="nav-item position-relative">
+                                    <a class="nav-link" href="#subMenu" role="button" data-bs-toggle="collapse">
+                                        Departamento
+                                    </a>
+                                    <div
+                                        class="collapse position-absolute row bg-light shadow p-3 mt-2 rounded"
+                                        id="subMenu"
+                                        style="min-width: 1000px; top: 100%; left: 0; z-index: 10; font-size: 16px"
+                                    >
+                                        <div class="col-3">
+                                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3">
+                                            <ul class="list-unstyled d-flex flex-column gap-3">
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                                <li><a href="#" class="text-muted">Categoria</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-3 p-0 position-relative">
+                                            <img
+                                                class="rounded w-100"
+                                                src="/images/banners/mug2.png"
+                                                width="240"
+                                                height="300"
+                                            />
+
+                                            <div
+                                                class="position-absolute top-0 start-0 w-100 h-100 text-white rounded"
+                                                style="
+                                                    background: linear-gradient(
+                                                        to left,
+                                                        rgba(0, 0, 0, 0.85),
+                                                        rgba(0, 0, 0, 0)
+                                                    );
+                                                    left: 222px;
+                                                "
+                                            >
+                                                <p class="fs-4 ms-5 mt-5" style="max-width: 127px; line-height: 27px">
+                                                    Confira os Produtos
+                                                    <strong>Que acabaram De chega</strong>
+                                                </p>
+
+                                                <button class="btn text-white border ms-5 fs-6 fw-bold">
+                                                    Ver todos
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Departamento</a>
@@ -315,7 +382,35 @@
                                         </div>
 
                                         <!-- mug2 col bg -->
-                                        <div class="col-3"></div>
+                                        <div class="col-3 p-0 position-relative">
+                                            <img
+                                                class="rounded w-100"
+                                                src="/images/banners/mug2.png"
+                                                width="240"
+                                                height="300"
+                                            />
+
+                                            <div
+                                                class="position-absolute top-0 start-0 w-100 h-100 text-white rounded"
+                                                style="
+                                                    background: linear-gradient(
+                                                        to left,
+                                                        rgba(0, 0, 0, 0.85),
+                                                        rgba(0, 0, 0, 0)
+                                                    );
+                                                    left: 222px;
+                                                "
+                                            >
+                                                <p class="fs-4 ms-5 mt-5" style="max-width: 127px; line-height: 27px">
+                                                    Confira os Produtos
+                                                    <strong>Que acabaram De chega</strong>
+                                                </p>
+
+                                                <button class="btn text-white border ms-5 fs-6 fw-bold">
+                                                    Ver todos
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1390,18 +1485,18 @@
                     <div class="d-none d-lg-flex justify-content-evenly w-100">
                         <div class="d-flex flex-column custom-fs-sm gap-1">
                             <h5 class="fw-bold">Institucional</h5>
-                            <span>Sobre Nós</span>
-                            <span>Nossas Lojas</span>
-                            <span>Privacidade e Segurança</span>
-                            <span>Termos e Condições</span>
+                            <a href="#">Sobre Nós</a>
+                            <a href="#">Nossas Lojas</a>
+                            <a href="#">Privacidade e Segurança</a>
+                            <a href="#">Termos e Condições</a>
                         </div>
                         <div class="d-flex flex-column custom-fs-sm gap-1">
                             <h5 class="fw-bold">Central de ajuda</h5>
-                            <span>Fale Conosco</span>
-                            <span>Frete e Entrega</span>
-                            <span>Trocas e Devoluções</span>
-                            <span>Formas de Pagamento</span>
-                            <span>FAQ</span>
+                            <a href="#">Fale Conosco</a>
+                            <a href="#">Frete e Entrega</a>
+                            <a href="#">Trocas e Devoluções</a>
+                            <a href="#">Formas de Pagamento</a>
+                            <a href="#">FAQ</a>
                         </div>
                         <div class="d-flex flex-column custom-fs-sm gap-1">
                             <h5 class="fw-bold">Atendimento</h5>

@@ -177,6 +177,11 @@ a:hover + i{
   color:  #0d6efd!important; ;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .animated {
   animation: down 1s ease-in-out forwards;
   transform: translateY(-100%);
